@@ -1,0 +1,1 @@
+python train.py dataset=pku_fusion +experiment/pku_fusion='base.yaml' 

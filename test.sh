@@ -1,0 +1,1 @@
+python validation.py dataset=pku_fusion +experiment/pku_fusion='base.yaml'

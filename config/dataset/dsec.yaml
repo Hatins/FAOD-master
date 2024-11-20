@@ -1,0 +1,10 @@
+defaults:
+  - base
+
+path: '/data2/zht/fusion_detection/DSEC_H5_Process/freq_1_1'
+name: dsec
+ev_repr_name: 'stacked_histogram_dt=50_nbins=10'
+sequence_length: 5
+resolution_hw: [480, 640]
+downsample_by_factor_2: False
+only_load_end_labels: False

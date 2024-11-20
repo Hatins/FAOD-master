@@ -1,0 +1,10 @@
+defaults:
+  - base
+
+path: '/data2/zht/fusion_detection/PKU-H5-Process/freq_1_1'
+name: pku_fusion
+ev_repr_name: 'stacked_histogram_dt=50_nbins=10'
+sequence_length: 11
+resolution_hw: [260, 346]
+downsample_by_factor_2: False
+only_load_end_labels: False

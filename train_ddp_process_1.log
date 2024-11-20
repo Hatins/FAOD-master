@@ -1,0 +1,155 @@
+[2024-03-25 14:22:56,245][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 14:22:56,277][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 14:22:58,039][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 14:22:58,039][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 14:23:06,541][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 14:23:06,543][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 14:23:38,917][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 14:23:38,927][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 14:23:40,530][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 14:23:40,531][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 14:23:44,191][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 14:23:44,191][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 14:30:38,246][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 14:30:38,247][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 14:30:39,846][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 14:30:39,847][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 14:30:47,155][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 14:30:47,156][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 14:31:49,407][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 14:31:49,418][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 14:31:51,183][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 14:31:51,184][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 14:31:56,665][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 14:31:56,665][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 14:38:05,901][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 14:38:05,911][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 14:38:07,526][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 14:38:07,526][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 14:38:12,186][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 14:38:12,187][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 14:40:13,759][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 14:40:13,770][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 14:40:15,370][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 14:40:15,371][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 14:40:19,009][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 14:40:19,010][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 14:43:16,360][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 14:43:16,381][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 14:43:17,953][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 14:43:17,953][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 14:43:21,251][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 14:43:21,251][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 14:43:26,123][torch.nn.parallel.distributed][INFO] - Reducer buckets have been rebuilt in this iteration.
+[2024-03-25 14:50:14,131][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 14:50:14,132][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 14:50:15,718][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 14:50:15,718][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 14:50:19,336][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 14:50:19,337][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 15:03:38,575][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 15:03:38,575][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 15:03:40,179][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 15:03:40,179][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 15:03:43,667][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 15:03:43,668][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 15:05:03,640][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 15:05:03,660][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 15:05:05,297][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 15:05:05,297][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 15:05:09,019][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 15:05:09,019][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 15:07:37,923][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 15:07:37,934][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 15:07:39,559][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 15:07:39,560][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 15:07:43,072][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 15:07:43,072][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 17:55:34,156][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-25 17:55:34,167][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-25 17:55:36,176][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-25 17:55:36,176][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-25 17:55:39,955][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-25 17:55:39,956][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-25 22:17:58,552][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:4 to store for rank: 1
+[2024-03-25 22:17:58,553][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:4 with 2 nodes.
+[2024-03-25 22:21:42,723][detectron2.evaluation.fast_eval_api][INFO] - Evaluate annotation type *bbox*
+[2024-03-25 22:21:45,064][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.evaluate() finished in 2.34 seconds.
+[2024-03-25 22:21:45,122][detectron2.evaluation.fast_eval_api][INFO] - Accumulating evaluation results...
+[2024-03-25 22:21:45,594][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.accumulate() finished in 0.47 seconds.
+[2024-03-26 01:40:29,234][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:5 to store for rank: 1
+[2024-03-26 01:40:29,234][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:5 with 2 nodes.
+[2024-03-26 01:44:12,588][detectron2.evaluation.fast_eval_api][INFO] - Evaluate annotation type *bbox*
+[2024-03-26 01:44:14,690][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.evaluate() finished in 2.10 seconds.
+[2024-03-26 01:44:14,725][detectron2.evaluation.fast_eval_api][INFO] - Accumulating evaluation results...
+[2024-03-26 01:44:15,114][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.accumulate() finished in 0.39 seconds.
+[2024-03-26 05:02:47,546][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:6 to store for rank: 1
+[2024-03-26 05:02:47,547][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:6 with 2 nodes.
+[2024-03-26 05:06:06,828][detectron2.evaluation.fast_eval_api][INFO] - Evaluate annotation type *bbox*
+[2024-03-26 05:06:08,979][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.evaluate() finished in 2.15 seconds.
+[2024-03-26 05:06:09,014][detectron2.evaluation.fast_eval_api][INFO] - Accumulating evaluation results...
+[2024-03-26 05:06:09,425][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.accumulate() finished in 0.41 seconds.
+[2024-03-29 11:44:55,557][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-03-29 11:44:55,568][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-03-29 11:44:57,005][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-03-29 11:44:57,005][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-03-29 11:44:59,908][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-03-29 11:44:59,909][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-03-29 15:13:09,336][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:4 to store for rank: 1
+[2024-03-29 15:13:09,338][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:4 with 2 nodes.
+[2024-03-29 15:16:39,046][detectron2.evaluation.fast_eval_api][INFO] - Evaluate annotation type *bbox*
+[2024-03-29 15:16:41,272][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.evaluate() finished in 2.23 seconds.
+[2024-03-29 15:16:41,329][detectron2.evaluation.fast_eval_api][INFO] - Accumulating evaluation results...
+[2024-03-29 15:16:41,725][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.accumulate() finished in 0.40 seconds.
+[2024-03-29 18:40:11,473][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:5 to store for rank: 1
+[2024-03-29 18:40:11,474][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:5 with 2 nodes.
+[2024-03-29 18:42:38,781][detectron2.evaluation.fast_eval_api][INFO] - Evaluate annotation type *bbox*
+[2024-03-29 18:42:40,899][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.evaluate() finished in 2.12 seconds.
+[2024-03-29 18:42:40,937][detectron2.evaluation.fast_eval_api][INFO] - Accumulating evaluation results...
+[2024-03-29 18:42:41,338][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.accumulate() finished in 0.40 seconds.
+[2024-03-29 22:06:19,112][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:6 to store for rank: 1
+[2024-03-29 22:06:19,113][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:6 with 2 nodes.
+[2024-03-29 22:08:39,994][detectron2.evaluation.fast_eval_api][INFO] - Evaluate annotation type *bbox*
+[2024-03-29 22:08:42,286][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.evaluate() finished in 2.29 seconds.
+[2024-03-29 22:08:42,320][detectron2.evaluation.fast_eval_api][INFO] - Accumulating evaluation results...
+[2024-03-29 22:08:42,686][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.accumulate() finished in 0.37 seconds.
+[2024-03-30 01:32:29,868][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:7 to store for rank: 1
+[2024-03-30 01:32:29,869][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:7 with 2 nodes.
+[2024-03-30 01:34:56,319][detectron2.evaluation.fast_eval_api][INFO] - Evaluate annotation type *bbox*
+[2024-03-30 01:34:58,385][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.evaluate() finished in 2.07 seconds.
+[2024-03-30 01:34:58,419][detectron2.evaluation.fast_eval_api][INFO] - Accumulating evaluation results...
+[2024-03-30 01:34:58,796][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.accumulate() finished in 0.38 seconds.
+[2024-03-30 03:43:27,761][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:8 to store for rank: 1
+[2024-03-30 03:43:27,762][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:8 with 2 nodes.
+[2024-03-30 04:54:14,764][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:9 to store for rank: 1
+[2024-03-30 04:54:14,765][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:9 with 2 nodes.
+[2024-03-30 04:56:42,322][detectron2.evaluation.fast_eval_api][INFO] - Evaluate annotation type *bbox*
+[2024-03-30 04:56:44,662][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.evaluate() finished in 2.34 seconds.
+[2024-03-30 04:56:44,697][detectron2.evaluation.fast_eval_api][INFO] - Accumulating evaluation results...
+[2024-03-30 04:56:45,070][detectron2.evaluation.fast_eval_api][INFO] - COCOeval_opt.accumulate() finished in 0.37 seconds.
+[2024-04-03 17:39:37,818][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-04-03 17:39:37,839][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-04-03 18:49:53,483][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-04-03 18:49:53,515][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-04-03 18:49:55,515][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-04-03 18:49:55,515][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-04-03 18:49:58,767][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-04-03 18:49:58,767][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-04-03 18:51:57,950][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-04-03 18:51:57,960][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-04-03 18:51:59,589][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-04-03 18:51:59,590][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-04-03 18:52:02,407][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-04-03 18:52:02,408][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-04-03 18:52:40,858][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-04-03 18:52:40,869][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-04-03 18:52:42,343][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-04-03 18:52:42,343][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-04-03 18:52:45,137][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-04-03 18:52:45,138][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.
+[2024-04-03 19:16:44,871][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2024-04-03 19:16:44,881][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 2 nodes.
+[2024-04-03 19:16:46,329][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:2 to store for rank: 1
+[2024-04-03 19:16:46,330][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 2 nodes.
+[2024-04-03 19:16:49,062][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:3 to store for rank: 1
+[2024-04-03 19:16:49,062][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 2 nodes.

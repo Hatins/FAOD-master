@@ -1,0 +1,3 @@
+This dict contain the process of the source dataset, incluing:
+    1. transfer the aedat4 format to h5 format
+    2. event frame constructing 

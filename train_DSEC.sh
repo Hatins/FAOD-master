@@ -1,0 +1,1 @@
+python train.py dataset=dsec +experiment/dsec='base.yaml' 

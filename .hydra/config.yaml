@@ -1,0 +1,210 @@
+reproduce:
+  seed_everything: null
+  deterministic_flag: false
+  benchmark: false
+training:
+  precision: 32
+  max_epochs: 10000
+  max_steps: 400000
+  learning_rate: 0.00015
+  weight_decay: 0
+  gradient_clip_val: 1.0
+  limit_train_batches: 1.0
+  lr_scheduler:
+    use: true
+    total_steps: ${..max_steps}
+    pct_start: 0.005
+    div_factor: 20
+    final_div_factor: 10000
+validation:
+  limit_val_batches: 1.0
+  val_check_interval: 20000
+  check_val_every_n_epoch: null
+batch_size:
+  train: 2
+  eval: 2
+hardware:
+  num_workers:
+    train: 4
+    eval: 2
+  gpus:
+  - 0
+  - 1
+  dist_backend: nccl
+logging:
+  ckpt_every_n_epochs: 1
+  train:
+    metrics:
+      compute: false
+      detection_metrics_every_n_steps: null
+    log_model_every_n_steps: 5000
+    log_every_n_steps: 500
+    high_dim:
+      enable: true
+      every_n_steps: 5000
+      n_samples: 4
+  validation:
+    high_dim:
+      enable: true
+      every_n_epochs: 1
+      n_samples: 8
+wandb:
+  wandb_runpath: null
+  artifact_name: null
+  artifact_local_file: null
+  resume_only_weights: false
+  name: darknet_s5_unpaired
+  group_name: FUSION
+  project_name: FFOD
+dataset:
+  name: pku_fusion
+  path: /data2/zht/PKU-H5-Process/freq_1_1
+  train:
+    sampling: mixed
+    random:
+      weighted_sampling: false
+    mixed:
+      w_stream: 1
+      w_random: 1
+  eval:
+    sampling: stream
+  data_augmentation:
+    random:
+      prob_time_flip: 0
+      unpair:
+        prob: 0.5
+        min_drift: 1
+        max_drift: 10
+      prob_hflip: 0.5
+      rotate:
+        prob: 0
+        min_angle_deg: 2
+        max_angle_deg: 6
+      zoom:
+        prob: 0.8
+        zoom_in:
+          weight: 8
+          factor:
+            min: 1
+            max: 1.5
+        zoom_out:
+          weight: 2
+          factor:
+            min: 1
+            max: 1.2
+    stream:
+      prob_time_flip: 0
+      unpair:
+        prob: 0.5
+        min_drift: 1
+        max_drift: 10
+      prob_hflip: 0.5
+      rotate:
+        prob: 0
+        min_angle_deg: 2
+        max_angle_deg: 6
+      zoom:
+        prob: 0.5
+        zoom_out:
+          factor:
+            min: 1
+            max: 1.2
+  model_type: None
+  shift:
+    label: true
+    image: true
+  ev_repr_name: stacked_histogram_dt=50_nbins=10
+  sequence_length: 11
+  resolution_hw:
+  - 260
+  - 346
+  downsample_by_factor_2: false
+  only_load_end_labels: false
+model:
+  name: rnndet
+  backbone:
+    name: forward_fusion
+    type: fusion
+    fusion_type: cross_cbam
+    enable_align: true
+    memory_type: s5
+    backbone_type: darknet
+    resnet_layers: 18
+    using_align_loss: false
+    enable_blur_aug: false
+    time_scale: 1
+    compile:
+      enable: false
+      args:
+        mode: reduce-overhead
+    ev_input_channels: 20
+    img_input_channels: 3
+    enable_masking: false
+    partition_split_32: 2
+    embed_dim: 64
+    dim_multiplier:
+    - 1
+    - 2
+    - 4
+    - 8
+    num_blocks:
+    - 1
+    - 1
+    - 1
+    - 1
+    T_max_chrono_init:
+    - 4
+    - 8
+    - 16
+    - 32
+    stem:
+      patch_size: 4
+    stage:
+      downsample:
+        type: patch
+        overlap: true
+        norm_affine: true
+      attention:
+        use_torch_mha: false
+        partition_size: ???
+        dim_head: 32
+        attention_bias: true
+        mlp_activation: gelu
+        mlp_gated: false
+        mlp_bias: true
+        mlp_ratio: 4
+        drop_mlp: 0
+        drop_path: 0
+        ls_init_value: 1.0e-05
+      lstm:
+        dws_conv: false
+        dws_conv_only_hidden: true
+        dws_conv_kernel_size: 3
+        drop_cell_update: 0
+      s5:
+        dim: 80
+        state_dim: 80
+  fpn:
+    name: PAFPN
+    compile:
+      enable: false
+      args:
+        mode: reduce-overhead
+    depth: 0.67
+    in_stages:
+    - 2
+    - 3
+    - 4
+    depthwise: false
+    act: silu
+  head:
+    name: YoloX
+    compile:
+      enable: false
+      args:
+        mode: reduce-overhead
+    depthwise: false
+    act: silu
+  postprocess:
+    confidence_threshold: 0.1
+    nms_threshold: 0.45
