@@ -72,6 +72,7 @@ python train.py dataset={DATASET} dataset.path={DATA_PATH} +experiment/{DATASET}
 ```
 Other settings like ``training.precision``, ``batch_size.train``, ``hardware.num_workers`` can be set in file ``config/train.yaml`` 
 and ``config/experiment/{DATASET}/default.yaml`` conveniently.
+Training FAOD with/without Time Shift? Following this instruction.
 
 ## Citation
 coming soon~
