@@ -1,4 +1,5 @@
 # Frequency-Adaptive Low-Latency Object Detection Using Events and Frames
+Official code repository for Frequency-Adaptive Low-Latency Object Detection Using Events and Frames.
 <p align="center">
   <img src="readme/imgs/framework.png" width="750">
 </p>
@@ -64,7 +65,7 @@ python validation.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHEC
 Other settings like ``use_test_set``, ``training.precision``, ``batch_size.eval``, ``hardware.num_workers`` can be set in file ``config/val.yaml`` 
 and ``config/experiment/{DATASET}/default.yaml`` conveniently.
 
-## Train
+## Train FAOD with scratch
 Define the ``DATASET``, ``DATA_PATH``, and then run the following command:
 ```python
 python train.py dataset={DATASET} dataset.path={DATA_PATH} +experiment/{DATASET}='base.yaml'
@@ -72,4 +73,6 @@ python train.py dataset={DATASET} dataset.path={DATA_PATH} +experiment/{DATASET}
 Other settings like ``training.precision``, ``batch_size.train``, ``hardware.num_workers`` can be set in file ``config/train.yaml`` 
 and ``config/experiment/{DATASET}/default.yaml`` conveniently.
 
+## Citation
+coming soon~
 
