@@ -31,6 +31,9 @@ pip install openmim
 mim install mmcv
 ```
 ## Required Data
+We provide datasets with the similar format of [RVT](https://github.com/uzh-rpg/RVT) for easy implements. 
+Noth that the following datasets are paired Event-RGB. Trying to evaluate ``Event-RGB Mismatch'' and ``Train-Infer Mismatch''?
+Following these instructions to create unpaired Event-RGB datasets. 
 <table>
   <tr>
     <th style="text-align:center;">Download Links</th>
@@ -52,3 +55,21 @@ mim install mmcv
     <td style="text-align:center;"><a href="https://1drv.ms/u/c/93289205239bc375/ETetOpGDDyJDsN_5lTkvdwEBqEvm9kw2aqdXDNCiHn4FAg?e=c1yTGf">42.5</a></td>
   </tr>
 </table>
+
+## Validation with pre-trained models
+Define the ``DATASET'', ``DATA_PATH'', ``CHECKPOINT'', and then run the following command:
+```python
+python validation.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT} +experiment/{DATASET}='base.yaml'
+```
+Other settings like ``use_test_set'', ``training.precision'', ``batch_size.eval'', ``hardware.num_workers'' can be set in file ``config/val.yaml'' 
+and ``config/experiment/{DATASET}/default.yaml'' conveniently.
+
+## Train
+Define the ``DATASET'', ``DATA_PATH'', and then run the following command:
+```python
+python train.py dataset={DATASET} dataset.path={DATA_PATH} +experiment/{DATASET}='base.yaml'
+```
+Other settings like ``training.precision'', ``batch_size.train'', ``hardware.num_workers'' can be set in file ``config/train.yaml'' 
+and ``config/experiment/{DATASET}/default.yaml'' conveniently.
+
+
