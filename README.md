@@ -57,19 +57,19 @@ Following these instructions to create unpaired Event-RGB datasets.
 </table>
 
 ## Validation with pre-trained models
-Define the ''DATASET'', ''DATA_PATH'', ''CHECKPOINT'', and then run the following command:
+Define the ``DATASET``, ``DATA_PATH``, ``CHECKPOINT``, and then run the following command:
 ```python
 python validation.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT} +experiment/{DATASET}='base.yaml'
 ```
-Other settings like ''use_test_set'', ''training.precision'', ''batch_size.eval'', ''hardware.num_workers'' can be set in file ''config/val.yaml'' 
-and ''config/experiment/{DATASET}/default.yaml'' conveniently.
+Other settings like ``use_test_set``, ``training.precision``, ``batch_size.eval``, ``hardware.num_workers`` can be set in file ``config/val.yaml`` 
+and ``config/experiment/{DATASET}/default.yaml`` conveniently.
 
 ## Train
-Define the ''DATASET'', ''DATA_PATH'', and then run the following command:
+Define the ``DATASET``, ``DATA_PATH``, and then run the following command:
 ```python
 python train.py dataset={DATASET} dataset.path={DATA_PATH} +experiment/{DATASET}='base.yaml'
 ```
-Other settings like ''training.precision'', ''batch_size.train'', ''hardware.num_workers'' can be set in file ''config/train.yaml'' 
-and ''config/experiment/{DATASET}/default.yaml'' conveniently.
+Other settings like ``training.precision``, ``batch_size.train``, ``hardware.num_workers`` can be set in file ``config/train.yaml`` 
+and ``config/experiment/{DATASET}/default.yaml`` conveniently.
 
 
