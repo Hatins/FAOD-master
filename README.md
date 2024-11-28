@@ -33,7 +33,8 @@ mim install mmcv
 ```
 ## Required Data
 We provide datasets with the similar format of [RVT](https://github.com/uzh-rpg/RVT) for easy implements. 
-Noth that the following datasets are paired Event-RGB. Trying to evaluate ``Event-RGB Mismatch'' and ``Train-Infer Mismatch''?
+
+Noth that the following datasets are paired Event-RGB. Trying to evaluate ``Event-RGB Mismatch`` and ``Train-Infer Mismatch``?
 Following these instructions to create unpaired Event-RGB datasets. 
 <table>
   <tr>
