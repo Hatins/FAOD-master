@@ -94,15 +94,32 @@ class Module(pl.LightningModule):
 
     def forward(self,
                 event_tensor: th.Tensor,
+                rgb_tensor: th.Tensor,
                 previous_states: Optional[LstmStates] = None,
                 retrieve_detections: bool = True, 
-                targets=None) \
-            -> Tuple[Union[th.Tensor, None], Union[Dict[str, th.Tensor], None], LstmStates]:
+                targets=None) -> Tuple[Union[th.Tensor, None], Union[Dict[str, th.Tensor], None], LstmStates]:
 
-        return self.mdl(x=event_tensor,
-                        previous_states=previous_states,
-                        retrieve_detections=retrieve_detections,
-                        targets=targets)
+        self.started_training = False
+        self.training = False
+        event_tensor = event_tensor.to(dtype=self.dtype)
+        event_tensor = self.input_padder.pad_tensor_ev_repr(event_tensor)
+
+        rgb_tensor = rgb_tensor.to(dtype=self.dtype)
+        rgb_tensor = self.input_padder.pad_tensor_ev_repr(rgb_tensor)
+
+        memory_type = self.mdl_config.backbone.memory_type
+        assert memory_type == 'lstm'
+        backbone_features, states = self.mdl.forward_backbone_rnn(ev_input=event_tensor, img_input=rgb_tensor,
+                                                                    previous_states=previous_states)
+            
+        predictions, _ = self.mdl.forward_detect(backbone_features=backbone_features)
+
+        pred_processed = postprocess(prediction=predictions,
+                                    num_classes=self.mdl_config.head.num_classes,
+                                    conf_thre=0.5,
+                                    nms_thre=self.mdl_config.postprocess.nms_threshold)
+        
+        return pred_processed, states
 
     def get_worker_id_from_batch(self, batch: Any) -> int:
         return batch['worker_id']
