@@ -1,0 +1,1 @@
+python demo.py dataset=pku_fusion +experiment/pku_fusion='base.yaml'
