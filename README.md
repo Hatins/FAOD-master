@@ -10,6 +10,7 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
 <p align="center">
   <img src="readme/videos/FAOD_unpaired_2.gif" width="750">
 </p>
+testets
 
 ### Under Train-Infer Mismatch
 <p align="center">
