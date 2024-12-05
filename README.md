@@ -9,12 +9,12 @@ Some of the data is uploading right now, and it will be finished before 15th, De
 to raise an issue and we will resolve it as soon as possible.
 
 The advantages of this repository in dealing object detection using both Events and Frames
-- We followed the data format of [RVT](https://github.com/uzh-rpg/RVT), and all datasets are now easier to handle, smaller, and faster to read and write. We appreciate the excellent work of
+- We follow the data format of [RVT](https://github.com/uzh-rpg/RVT), and all datasets are now easier to handle, smaller, and faster to read and write. We appreciate the excellent work of
   [Mr magehrig](https://github.com/magehrig) and the [RPG](https://github.com/uzh-rpg).
 
 - Our model is very lightweight, small in size, fast, and can be trained end-to-end on a GPU with 24G of memory.
 
-- We did not perform any additional post-processing during training and testing, and we used all categories of the dataset during training to ensure fair evaluation.
+- We do not perform any additional post-processing (except NMS) during training and testing, and we used all categories of the dataset during training to ensure fair evaluation.
 
 - We provide all the data files, including the files before and after the frame building, as well as the pre-trained model. You can flexibly adjust and add your own design.
 
