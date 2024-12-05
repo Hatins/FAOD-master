@@ -40,8 +40,8 @@ Following these instructions to create unpaired Event-RGB datasets.
 <table>
   <tr>
     <th style="text-align:center;">Download Links</th>
-    <th style="text-align:center;"><a href="https://1drv.ms/u/c/93289205239bc375/EQue4dcG4M9Ggbu5dM-iOc0Bphskqnh1zua2rogpYNkANw?e=crXrjv">PKU-DAVIS-SOD</a></td>
-    <th style="text-align:center;"><a href="https://1drv.ms/u/c/93289205239bc375/ETetOpGDDyJDsN_5lTkvdwEBqEvm9kw2aqdXDNCiHn4FAg?e=c1yTGf">DSEC-Detection</a></td>
+    <th style="text-align:center;"><a href="https://drive.google.com/drive/folders/12PprdOSXhIrlp-xPKeboaVf7G8SPuyJB?usp=drive_link">PKU-DAVIS-SOD</a></td>
+    <th style="text-align:center;"><a href="https://drive.google.com/drive/folders/1sqaqS2TWkx8tSdVj4WFJD1uugUaKSX9j?usp=drive_link">DSEC-Detection</a></td>
   </tr>
 </table>
 
