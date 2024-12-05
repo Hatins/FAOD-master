@@ -1,4 +1,5 @@
 # Frequency-Adaptive Low-Latency Object Detection Using Events and Frames
+![License](https://img.shields.io/badge/license-MIT-yellow)
 Official code repository for Frequency-Adaptive Low-Latency Object Detection Using Events and Frames.
 <p align="center">
   <img src="readme/imgs/framework.png" width="750">
@@ -10,7 +11,7 @@ to raise an issue and we will resolve it as soon as possible.
 
 The advantages of this repository in dealing object detection using both Events and Frames
 - We follow the data format of [RVT](https://github.com/uzh-rpg/RVT), and all datasets are now easier to handle, smaller, and faster to read and write. We appreciate the excellent work of
-  [Mr magehrig](https://github.com/magehrig) and the [RPG](https://github.com/uzh-rpg).
+  [Mr magehrig](https://github.com/magehrig) and the [RPG](https://github.com/uzh-rpg). If you are familiar with the RVT, it will be easy to follow this project.
 
 - Our model is very lightweight, small in size, fast, and can be trained end-to-end on a GPU with 24G of memory.
 
