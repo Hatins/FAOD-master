@@ -53,9 +53,9 @@ Following these instructions to create unpaired Event-RGB datasets.
     <th style="text-align:center;">DSEC-Detection</th>
   </tr>
   <tr>
-    <td style="text-align:center;"><a href="https://1drv.ms/u/c/93289205239bc375/EQue4dcG4M9Ggbu5dM-iOc0Bphskqnh1zua2rogpYNkANw?e=crXrjv">mAP = 29.7</a></td>
-    <td style="text-align:center;"><a href="https://1drv.ms/u/c/93289205239bc375/EQue4dcG4M9Ggbu5dM-iOc0Bphskqnh1zua2rogpYNkANw?e=crXrjv">mAP = 30.5</a></td>
-    <td style="text-align:center;"><a href="https://1drv.ms/u/c/93289205239bc375/ETetOpGDDyJDsN_5lTkvdwEBqEvm9kw2aqdXDNCiHn4FAg?e=c1yTGf">mAP = 42.5</a></td>
+    <td style="text-align:center;"><a href="https://drive.google.com/file/d/15HqCsKFnRvv1D1dzEmvipLpcCCjtKNEe/view?usp=drive_link">mAP = 29.7</a></td>
+    <td style="text-align:center;"><a href="https://drive.google.com/file/d/1lTzr0X7eXKzeS0wVU8tzg6JYj2cMJCEr/view?usp=drive_link">mAP = 30.5</a></td>
+    <td style="text-align:center;"><a href="https://drive.google.com/drive/folders/12PprdOSXhIrlp-xPKeboaVf7G8SPuyJB?usp=drive_link">mAP = 42.5</a></td>
   </tr>
 </table>
 
