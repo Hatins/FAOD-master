@@ -1,5 +1,5 @@
 # Frequency-Adaptive Low-Latency Object Detection Using Events and Frames
-![License](https://img.shields.io/badge/license-MIT-yellow) ![Language](https://img.shields.io/badge/language-python3.11-brightgreen) ![cuda](http://img.shields.io/badge/language-11.8-red)
+![License](https://img.shields.io/badge/license-MIT-yellow) ![Language](https://img.shields.io/badge/language-python3.11-brightgreen) ![cuda](http://img.shields.io/badge/cuda-11.8-red)
    
 
 Official code repository for Frequency-Adaptive Low-Latency Object Detection Using Events and Frames.
