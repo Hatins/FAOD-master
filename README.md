@@ -8,7 +8,7 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
 </p>
 
 ## Important Notes
-Some of the data is uploading right now, and it will be finished before 15th, December. If you encounter any problems reproducing our code, please don't hesitate
+:love_letter: Some of the data is uploading right now, and it will be finished before 15th, December. If you encounter any problems reproducing our code, please don't hesitate
 to raise an issue and we will resolve it as soon as possible.
 
 :star: The advantages of this repository in dealing object detection using both Events and Frames
