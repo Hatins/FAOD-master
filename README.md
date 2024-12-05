@@ -55,7 +55,7 @@ Following these instructions to create unpaired Event-RGB datasets.
   <tr>
     <td style="text-align:center;"><a href="https://drive.google.com/file/d/15HqCsKFnRvv1D1dzEmvipLpcCCjtKNEe/view?usp=drive_link">mAP = 29.7</a></td>
     <td style="text-align:center;"><a href="https://drive.google.com/file/d/1lTzr0X7eXKzeS0wVU8tzg6JYj2cMJCEr/view?usp=drive_link">mAP = 30.5</a></td>
-    <td style="text-align:center;"><a href="https://drive.google.com/drive/folders/12PprdOSXhIrlp-xPKeboaVf7G8SPuyJB?usp=drive_link">mAP = 42.5</a></td>
+    <td style="text-align:center;"><a href="https://drive.google.com/file/d/15HqCsKFnRvv1D1dzEmvipLpcCCjtKNEe/view?usp=drive_link">mAP = 42.5</a></td>
   </tr>
 </table>
 
