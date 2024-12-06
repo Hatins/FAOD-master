@@ -73,8 +73,8 @@ def main(config: DictConfig):
         images_out_put_dir = 'predictions/images'
         video_out_put_dir = 'predictions/video'
     elif mode == 'gt':
-        images_out_put_dir = 'pre_gt/images'
-        video_out_put_dir = 'pre_gt/video'
+        images_out_put_dir = 'gt/images'
+        video_out_put_dir = 'gt/video'
 
     if not os.path.exists(images_out_put_dir):
         os.makedirs(images_out_put_dir)
