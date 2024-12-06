@@ -106,7 +106,7 @@ Then run the code :
 python demo.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT} +experiment/{DATASET}='base.yaml'
 ```
 
-The results will be saved in ``./gt`` or ``./predictions``.
+The results will be saved in ``./gt`` or ``./predictions``. You can also ajust the destination path by yourself.
 
 ## Citation
 Please cite our paper if you find it useful in your research:
