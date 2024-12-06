@@ -77,7 +77,7 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
 </table>
 
 ## Validation with pre-trained models
-Define the ``DATASET [`pku_fusion`, 'dsec']``, ``DATA_PATH``, ``CHECKPOINT``, ``use_test_se [True, False]t``, and then run the following command:
+Define the ``DATASET [`pku_fusion`, 'dsec']``, ``DATA_PATH``, ``CHECKPOINT``, ``use_test_set [True, False]``, and then run the following command:
 ```python
 python validation.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT} +experiment/{DATASET}='base.yaml' use_test_set={use_test_set}
 ```
