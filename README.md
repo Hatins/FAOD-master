@@ -77,7 +77,7 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
 </table>
 
 ## Validation with pre-trained models
-Define the ``DATASET [`pku_fusion`, 'dsec']``, ``DATA_PATH``, ``CHECKPOINT``, ``use_test_set [True, False]``, and then run the following command:
+Define the ``DATASET ['pku_fusion', 'dsec']``, ``DATA_PATH``, ``CHECKPOINT``, ``use_test_set [True, False]``, and then run the following command:
 ```python
 python validation.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT} use_test_set={use_test_set} +experiment/{DATASET}='base.yaml'
 ```
@@ -96,7 +96,7 @@ Training FAOD with/without Time Shift? Following this instruction.
 ## Visualization
 The relevant content is in ``demo.py``.
 
-You need to set ``mode = [`pre`, `gt`]``, and  show_mode = [`event`,`rgb`].
+You need to set ``mode = ['pre', 'gt']``, and  show_mode = ['event','rgb'].
 
 And indicate the sequence you want to visualize, e.g., ``PKU-H5-Process/freq_1_1/test/001_test_low_light``.
 
