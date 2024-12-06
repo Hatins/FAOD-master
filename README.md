@@ -94,5 +94,16 @@ and ``config/experiment/{DATASET}/default.yaml`` conveniently.
 Training FAOD with/without Time Shift? Following this instruction.
 
 ## Citation
-coming soon~
+Please cite our paper if you find it useful in your research:
+```
+@misc{zhang2024frequencyadaptivelowlatencyobjectdetection,
+      title={Frequency-Adaptive Low-Latency Object Detection Using Events and Frames}, 
+      author={Haitian Zhang and Xiangyuan Wang and Chang Xu and Xinya Wang and Fang Xu and Huai Yu and Lei Yu and Wen Yang},
+      year={2024},
+      eprint={2412.04149},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.04149}, 
+}
+```
 
