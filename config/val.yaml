@@ -9,7 +9,7 @@ use_test_set: False
 hardware:
   num_workers:
     eval: 6
-  gpus: 1 # GPU idx (multi-gpu not supported for validation)
+  gpus: 0 # GPU idx (multi-gpu not supported for validation)
 batch_size:
   eval: 4
 training:
