@@ -109,7 +109,7 @@ python demo.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT
 ## Citation
 Please cite our paper if you find it useful in your research:
 ```
-@misc{zhang2024frequencyadaptivelowlatencyobjectdetection,
+@misc{FAOD_2024_zhang,
       title={Frequency-Adaptive Low-Latency Object Detection Using Events and Frames}, 
       author={Haitian Zhang and Xiangyuan Wang and Chang Xu and Xinya Wang and Fang Xu and Huai Yu and Lei Yu and Wen Yang},
       year={2024},
