@@ -103,7 +103,7 @@ And indicate the sequence you want to visualize, e.g., ``PKU-H5-Process/freq_1_1
 Then run the code :
 
 ```python
-python validation.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT} +experiment/{DATASET}='base.yaml'
+python demo.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT} +experiment/{DATASET}='base.yaml'
 ```
 
 ## Citation
