@@ -58,8 +58,8 @@ def main(config: DictConfig):
     module = module.eval()
 
     mode = 'pre'            # ['gt', 'pre']
-    show_mode = 'rgb'       # ['event', 'rgb']
-    h5_file = ' '
+    show_mode = 'mixed'       # ['event', 'rgb', 'mixed']
+    h5_file = '/data2/zht/fusion_detection/PKU-H5-Process/freq_1_1/test/001_test_low_light'
 
     ev_file = h5_file + '/event_representations_v2/stacked_histogram_dt=50_nbins=10/event_representations.h5'
     rgb_file = h5_file + '/labels_v2/images.h5'
@@ -73,8 +73,8 @@ def main(config: DictConfig):
         images_out_put_dir = 'predictions/images'
         video_out_put_dir = 'predictions/video'
     elif mode == 'gt':
-        images_out_put_dir = 'gt/images'
-        video_out_put_dir = 'gt/video'
+        images_out_put_dir = 'pre_gt/images'
+        video_out_put_dir = 'pre_gt/video'
 
     if not os.path.exists(images_out_put_dir):
         os.makedirs(images_out_put_dir)
@@ -128,6 +128,17 @@ def main(config: DictConfig):
             single_frame_shown = frame * 255.0
         elif show_mode == 'rgb':
             single_frame_shown = rgb_pr
+
+        elif show_mode == 'mixed':
+            rgb_pr_show = rgb_pr.copy() # .astype(float) * 2.0
+            for i in range(num_bins):
+                pos_image = (ev_pr[:, :, i + num_bins]).astype(np.uint8)
+                neg_image = (ev_pr[:, :, i]).astype(np.uint8)
+                pos_image = cv2.equalizeHist(pos_image)
+                neg_image = cv2.equalizeHist(neg_image)
+                ev_image = np.concatenate((neg_image[..., None], np.zeros((height, width, 1), dtype=np.uint8), pos_image[..., None]), axis=-1)
+                rgb_pr_show = np.add(rgb_pr_show, ev_image*30)
+            single_frame_shown = rgb_pr_show
 
         event_frame = torch.tensor(event_frames[frame_index]).unsqueeze(0)
 
