@@ -24,7 +24,7 @@ e.g., when you set image_downsampling_rate=0.2, event_upsampling_rate=8, you wil
 the dataset with RGB frequency = 5 and Event frequency = 200.
 
 ```python
-python frame_construction/main.py input_dir={Input_Dir} target_dir={Target_Dir} image_upsampling_rate={image_downsampling_rate} event_upsampling_rate={event_upsampling_rate}
+python frame_construction/main.py --input_dir={Input_Dir} --target_dir={Target_Dir} --image_upsampling_rate={image_downsampling_rate} --event_upsampling_rate={event_upsampling_rate}
 ```
 
 ## Generate Event frames for DSEC-Detection
