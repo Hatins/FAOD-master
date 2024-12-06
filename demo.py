@@ -59,7 +59,7 @@ def main(config: DictConfig):
 
     mode = 'pre'            # ['gt', 'pre']
     show_mode = 'rgb'       # ['event', 'rgb']
-    h5_file = '/data2/zht/fusion_detection/PKU-H5-Process/freq_1_1/test/001_test_low_light'
+    h5_file = ' '
 
     ev_file = h5_file + '/event_representations_v2/stacked_histogram_dt=50_nbins=10/event_representations.h5'
     rgb_file = h5_file + '/labels_v2/images.h5'
