@@ -3,10 +3,10 @@ defaults:
   - /model/maxvit_yolox: default
 
 training:
-  precision: 32 # 32 # 16
+  precision: 32 
   max_epochs: 10000
-  max_steps: 400000 # 400000 # 200000
-  learning_rate: 0.00015 # 0.00015  # 0.0002
+  max_steps: 400000 
+  learning_rate: 0.00015 
   lr_scheduler:
     use: True
     total_steps: ${..max_steps}
@@ -14,14 +14,14 @@ training:
     div_factor: 20
     final_div_factor: 10000
 validation:
-  val_check_interval: 20000 # 20000 # 10000
+  val_check_interval: 20000
   check_val_every_n_epoch: null
 batch_size:
-  train: 2  # 2
-  eval: 8   # 2
+  train: 4 
+  eval: 4 
 hardware:
   num_workers:
-    train: 4  # 6
+    train: 6 
     eval: 2
 dataset:
   train:
