@@ -94,7 +94,7 @@ and ``config/experiment/{DATASET}/default.yaml`` conveniently.
 Training FAOD with/without Time Shift? Following this instruction.
 
 ## Visualization
-The relevant content is in demo.py.
+The relevant content is in ``demo.py``.
 
 You need to set ``mode = [`pre`, `gt`]``, and  show_mode = [`event`,`rgb`].
 
