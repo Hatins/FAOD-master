@@ -303,7 +303,7 @@ def save_labels(out_labels_dir: Path,
         objframe_idx_2_label_idx.append(start_idx)
         if len(labels) == 0:
             labels = np.zeros((1,), dtype=labels.dtype)
-            labels['class_id'] = 255    # 将无标注的帧的类别设置为255
+            labels['class_id'] = 255   
         labels_v2.append(labels)
         start_idx += len(labels)
 
@@ -375,9 +375,6 @@ def images_labels_and_ev_repr_timestamps(
 
     assert frame_images.shape[0] == start_indices_per_label.shape[0] == end_indices_per_label.shape[0]
 
-
-
-    ## 对图像频率进行下采样再上采样
     img_downsample_rate = int(1 / img_upsampling_rate)
     frame_images = frame_images[::img_downsample_rate]
 
@@ -394,7 +391,7 @@ def images_labels_and_ev_repr_timestamps(
     labels_high_freq = []
     ev_timestamps_start_high_freq = []
     ev_timestamps_end_high_freq = []
-    for frame_idx in range(frame_images.shape[0] - 1):    # 丢弃最后一帧
+    for frame_idx in range(frame_images.shape[0] - 1):    
         ## 1. get timestamps
         timestamps_i = frame_timestamps[frame_idx]
         timestamp_high_freq = timestamp_high_freq + [timestamps_i]*ev_divide_N
@@ -411,7 +408,7 @@ def images_labels_and_ev_repr_timestamps(
         ev_timestamps_end_high_freq = ev_timestamps_end_high_freq + list(ev_timestamps_i[1:])
 
         ## 4. get labels
-        idx_for_labels = frame_idx + 1    # 使用下一帧图像的labels
+        idx_for_labels = frame_idx + 1  
         label_idx_start = start_indices_per_label[idx_for_labels]
         label_idx_end = end_indices_per_label[idx_for_labels]
         labels_i = sequence_labels[label_idx_start:label_idx_end]
@@ -428,14 +425,13 @@ def images_labels_and_ev_repr_timestamps(
         labels_high_freq.append(labels_i)
         # labels_high_freq.append(labels_i)
 
-    ## 将最后一帧加回去
+
     image_high_freq.append(frame_images[-1])
     timestamp_high_freq.append(frame_timestamps[-1])
     labels_high_freq = [sequence_labels[start_indices_per_label[0]:end_indices_per_label[0]]] + labels_high_freq
 
-    ## 保证最后一帧的标注不为空
+
     while len(labels_high_freq[-1]) == 0 and ev_divide_N==1 and img_upsampling_rate==1:
-        print('!!!!!!!!!!!!!', h5_file)
         labels_high_freq = labels_high_freq[:-1]
 
         image_high_freq = image_high_freq[:-1]
@@ -458,133 +454,6 @@ def images_labels_and_ev_repr_timestamps(
     return timestamp_high_freq, image_high_freq, labels_high_freq, \
            ev_timestamps_start_high_freq, ev_timestamps_end_high_freq, \
            frameidx_2_repridx
-
-
-
-
-
-# def images_labels_and_ev_repr_timestamps_low_freq(
-#         h5_file: Path,  # for frame timestamps
-#         npy_file: Path,
-#         split_type: SplitType,
-#         filter_cfg: DictConfig,
-#         dataset_type: str,
-#         ev_divide_N: float,
-#         event_interval_us: int
-# ):
-#     assert h5_file.exists()
-#     assert h5_file.suffix == '.h5'
-#     assert npy_file.exists()
-#     assert npy_file.suffix == '.npy'
-#     assert 0 < ev_divide_N < 1
-#     assert (1 / ev_divide_N).is_integer()
-#
-#
-#     frame_data = h5py.File(str(h5_file), 'r')['frames']
-#     frame_images = np.asarray(frame_data['image'])
-#     frame_timestamps = np.asarray(frame_data['timestamp'])
-#     assert frame_images.shape[0] == frame_timestamps.shape[0]
-#     assert frame_images.shape[0] > 0
-#
-#
-#     sequence_labels = np.load(str(npy_file))
-#     assert len(sequence_labels) > 0
-#     sequence_labels = apply_filters(labels=sequence_labels,
-#                                     split_type=split_type,
-#                                     filter_cfg=filter_cfg,
-#                                     dataset_type=dataset_type)
-#     if sequence_labels.size == 0:
-#         raise NoLabelsException
-#
-#     start_indices_per_label = np.searchsorted(sequence_labels['t'], frame_timestamps, side='left')
-#     end_indices_per_label = np.searchsorted(sequence_labels['t'], frame_timestamps, side='right')
-#
-#     assert frame_images.shape[0] == start_indices_per_label.shape[0] == end_indices_per_label.shape[0]
-#
-#
-#     ## 对图像频率进行下采样再上采样
-#     downsample_rate = int(1 / ev_divide_N)
-#     frame_images = frame_images[::downsample_rate]
-#
-#     _, C1, C2, C3 = frame_images.shape
-#     frame_images = np.tile(frame_images[:, None], [1, downsample_rate, 1, 1, 1]).reshape(-1, C1, C2, C3)
-#
-#     frame_images = frame_images[:frame_timestamps.shape[0]]
-#
-#     # print('!!!!!!')
-#     # print(frame_images.shape)
-#     # print(frame_timestamps.shape)
-#     # print(start_indices_per_label.shape)
-#     # print(end_indices_per_label.shape)
-#     assert frame_images.shape[0] == start_indices_per_label.shape[0] == end_indices_per_label.shape[0] == frame_timestamps.shape[0]
-#
-#
-#
-#     timestamp_high_freq = []
-#     image_high_freq = []
-#     labels_high_freq = []
-#     ev_timestamps_start_high_freq = []
-#     ev_timestamps_end_high_freq = []
-#     for frame_idx in range(frame_images.shape[0] - 1):    # 丢弃最后一帧
-#         ## 1. get timestamps
-#         timestamps_i = frame_timestamps[frame_idx]
-#         timestamp_high_freq.append(timestamps_i)
-#
-#         ## 2. get image
-#         frame_i = frame_images[frame_idx]
-#         image_high_freq.append(frame_i)
-#
-#         ## 3. get event's timestamps
-#         # frame_start_time, frame_end_time = frame_timestamps[frame_idx], frame_timestamps[frame_idx + 1]
-#         frame_end_time = frame_timestamps[frame_idx + 1]
-#         frame_start_time = frame_timestamps[frame_idx + 1] - event_interval_us
-#
-#         ev_timestamps_start_high_freq.append(frame_start_time)
-#         ev_timestamps_end_high_freq.append(frame_end_time)
-#
-#         ## 4. get labels
-#         idx_for_labels = frame_idx + 1    # 使用下一帧图像的labels
-#         label_idx_start = start_indices_per_label[idx_for_labels]
-#         label_idx_end = end_indices_per_label[idx_for_labels]
-#         labels_i = sequence_labels[label_idx_start:label_idx_end]
-#
-#         if len(labels_i) != 0:
-#             assert np.all(labels_i['t'] == labels_i['t'][0])
-#             assert np.all(labels_i['t'][0] == frame_timestamps[idx_for_labels])
-#         else:
-#             # un_empty_start_index += 1   # TODO:
-#             pass
-#
-#         labels_high_freq.append(labels_i)
-#         # labels_high_freq.append(labels_i)
-#
-#
-#
-#     ## 将最后一帧加回去
-#     image_high_freq.append(frame_images[-1])
-#     timestamp_high_freq.append(frame_timestamps[-1])
-#     labels_high_freq = [sequence_labels[start_indices_per_label[0]:end_indices_per_label[0]]] + labels_high_freq
-#
-#
-#     timestamp_high_freq = np.stack(timestamp_high_freq, axis=0)
-#     image_high_freq = np.stack(image_high_freq, axis=0)
-#     ev_timestamps_start_high_freq = np.stack(ev_timestamps_start_high_freq, axis=0)
-#     ev_timestamps_end_high_freq = np.stack(ev_timestamps_end_high_freq, axis=0)
-#
-#     assert len(labels_high_freq) == timestamp_high_freq.shape[0] == image_high_freq.shape[0] == \
-#            ev_timestamps_start_high_freq.shape[0]+1 == ev_timestamps_end_high_freq.shape[0]+1
-#
-#     frameidx_2_repridx = np.arange(0, timestamp_high_freq.shape[0])
-#     assert frameidx_2_repridx.shape[0] == ev_timestamps_start_high_freq.shape[0]+1
-#
-#     return timestamp_high_freq, image_high_freq, labels_high_freq, \
-#            ev_timestamps_start_high_freq, ev_timestamps_end_high_freq, \
-#            frameidx_2_repridx
-
-
-
-
-
 
 def write_event_data(in_h5_file: Path,
                      ev_out_dir: Path,
@@ -732,19 +601,6 @@ def process_sequence(dataset: str,
             ev_divide_N=ev_upsampling_rate,
             event_interval_us=event_interval_us
         )
-    # if img_upsampling_rate < 1:
-    #     timestamps_per_frame, image_per_frame, labels_per_frame, \
-    #     ev_repr_timestamps_us_start, ev_repr_timestamps_us_end, \
-    #     frameidx2repridx = \
-    #         images_labels_and_ev_repr_timestamps_low_freq(
-    #             h5_file=in_h5_file,
-    #             npy_file=in_npy_file,
-    #             split_type=split_type,
-    #             filter_cfg=filter_cfg,
-    #             dataset_type=dataset,
-    #             ev_divide_N=img_upsampling_rate,
-    #             event_interval_us=event_interval_us
-    #         )
 
     ## 2) save: image_per_frame
     save_images_to_h5(out_images_dir=out_labels_dir, image_per_frame=image_per_frame)
