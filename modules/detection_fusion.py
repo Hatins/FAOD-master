@@ -92,6 +92,9 @@ class Module(pl.LightningModule):
         else:
             raise NotImplementedError
 
+    def set_model_to_gpus(self, device):
+        self.mdl = self.mdl.to(device)
+        
     def forward(self,
                 event_tensor: th.Tensor,
                 rgb_tensor: th.Tensor,
