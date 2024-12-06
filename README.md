@@ -96,7 +96,7 @@ Training FAOD with/without Time Shift? Following this instruction.
 ## Visualization
 The relevant content is in ``demo.py``.
 
-You need to set ``mode = ['pre', 'gt']``, and  show_mode = ['event','rgb'].
+You need to set ``mode = ['pre', 'gt']``, and  ``show_mode = ['event','rgb']``.
 
 And indicate the sequence you want to visualize, e.g., ``PKU-H5-Process/freq_1_1/test/001_test_low_light``.
 
