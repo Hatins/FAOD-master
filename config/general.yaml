@@ -21,11 +21,11 @@ validation:
   val_check_interval: null # Optional[int]
   check_val_every_n_epoch: 1 # Optional[int]
 batch_size:
-  train: 6  # 8
-  eval: 2   # 8
+  train: 4  # 8
+  eval: 4   # 8
 hardware:
   num_workers:
-    train: 4  # 6
+    train: 6  # 6
     eval: 2
   gpus: [0]   # Either a single integer (e.g. 3) or a list of integers (e.g. [3,5,6])
   dist_backend: "nccl"
@@ -58,6 +58,6 @@ wandb:
   artifact_name: null # Name of checkpoint/artifact. Required for resuming. E.g. USERNAME/PROJECTNAME/checkpoint-1grv5kg6-last:v15
   artifact_local_file: null # If specified, will use the provided local filepath instead of downloading it. Required if resuming with DDP.
   resume_only_weights: False
-  name: only_lstm
-  group_name: Ablation1  # Specify group name of the run
-  project_name: rvt
+  name: null
+  group_name: null  # Specify group name of the run
+  project_name: FAOD
