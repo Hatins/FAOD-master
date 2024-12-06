@@ -4,8 +4,8 @@ defaults:
   - model: rnndet
   - _self_
 
-checkpoint: checkpoints/RVT_DSEC.ckpt
-use_test_set: False
+checkpoint: ???
+use_test_set: True
 hardware:
   num_workers:
     eval: 6
