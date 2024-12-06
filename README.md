@@ -93,6 +93,19 @@ Other settings like ``training.precision``, ``batch_size.train``, ``hardware.num
 and ``config/experiment/{DATASET}/default.yaml`` conveniently.
 Training FAOD with/without Time Shift? Following this instruction.
 
+## Visualization
+The relevant content is in demo.py.
+
+You need to set ``mode = [`pre`, `gt`]``, and  show_mode = [`event`,`rgb`].
+
+And indicate the sequence you want to visualize, e.g., ``PKU-H5-Process/freq_1_1/test/001_test_low_light``.
+
+Then run the code :
+
+```python
+python validation.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT} +experiment/{DATASET}='base.yaml'
+```
+
 ## Citation
 Please cite our paper if you find it useful in your research:
 ```
