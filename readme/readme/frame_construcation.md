@@ -5,7 +5,7 @@
 <table>
   <tr>
     <th style="text-align:center;">Download Links</th>
-    <th style="text-align:center;"><a href="https://drive.google.com/drive/folders/12PprdOSXhIrlp-xPKeboaVf7G8SPuyJB?usp=drive_link">PKU-DAVIS-SOD</a></td>
+    <th style="text-align:center;"><a href="https://drive.google.com/file/d/1AZN0kirkPGDUfhpQDqMBTcP5DdHSgvR5/view?usp=drive_link">PKU-DAVIS-SOD</a></td>
     <th style="text-align:center;"><a href="https://drive.google.com/file/d/1-39iQVpt7KDW_MzoPvQO4pnPls0xspUI/view?usp=sharing">DSEC-Detection</a></td>
   </tr>
 </table>
