@@ -8,9 +8,6 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
 </p>
 
 ## Important Notes
-:love_letter: Some of the data is uploading right now, and it will be finished before 15th, December. If you encounter any problems reproducing our code, please don't hesitate
-to raise an issue and we will resolve it as soon as possible.
-
 :star: The advantages of this repository in dealing object detection using both Events and Frames
 - We follow the data format of [RVT](https://github.com/uzh-rpg/RVT), and all datasets are now easier to handle, smaller, and faster to read and write. We appreciate the excellent work of
   [Mr magehrig](https://github.com/magehrig) and the [RPG](https://github.com/uzh-rpg). If you are familiar with the RVT, it will be easy to follow this project.
