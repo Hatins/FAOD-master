@@ -105,17 +105,4 @@ python demo.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT
 
 The results will be saved in ``./gt`` or ``./predictions``. You can also ajust the destination path by yourself.
 
-## Citation
-Please cite our paper if you find it useful in your research:
-```
-@misc{FAOD_2024_zhang,
-      title={Frequency-Adaptive Low-Latency Object Detection Using Events and Frames}, 
-      author={Haitian Zhang and Xiangyuan Wang and Chang Xu and Xinya Wang and Fang Xu and Huai Yu and Lei Yu and Wen Yang},
-      year={2024},
-      eprint={2412.04149},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.04149}, 
-}
-```
 
