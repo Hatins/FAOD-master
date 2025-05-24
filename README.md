@@ -86,6 +86,28 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th style="text-align:center;">PKU-DAVIS-SOD (Time Shift)</th>
+    <th style="text-align:center;">PKU-DAVIS-SOD</th>
+    <th style="text-align:center;">DSEC-Detection</th>
+  </tr>
+  <tr>
+    <td style="text-align:center;">
+      <a href="https://drive.google.com/file/d/15Xk8fQ0h3zulg0CBtSncB-PIRr6e4e_4/view?usp=drive_link">mAP = 29.7</a><br>
+      <a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/EW3V3nADnYFJpapGRTuh2vYB9fiptAEUnwoTFdc2sc2G-A">OneDrive</a>
+    </td>
+    <td style="text-align:center;">
+      <a href="https://drive.google.com/file/d/1lTzr0X7eXKzeS0wVU8tzg6JYj2cMJCEr/view?usp=drive_link">mAP = 30.5</a><br>
+      <a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/EbbE7WeFN59JgJ7tg3XHaHkBro0rgEmejs5cBLog0lgo1Q">OneDrive</a>
+    </td>
+    <td style="text-align:center;">
+      <a href="https://drive.google.com/file/d/15HqCsKFnRvv1D1dzEmvipLpcCCjtKNEe/view?usp=drive_link">mAP = 42.5</a><br>
+      <a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/EYM0mEDEVcNHnZiE5W2oZ6sBitGlRxrfF7INhLnY-49ARA">OneDrive</a>
+    </td>
+  </tr>
+</table>
+
 ## Validation with pre-trained models
 Define the ``DATASET ['pku_fusion', 'dsec']``, ``DATA_PATH``, ``CHECKPOINT``, ``use_test_set [True, False]``, and then run the following command:
 ```python
