@@ -51,13 +51,6 @@ We provide datasets with the similar format of [RVT](https://github.com/uzh-rpg/
 
 Noth that the following datasets are paired Event-RGB. Trying to evaluate ``Event-RGB Mismatch`` and ``Train-Infer Mismatch``?
 Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/readme/readme/frame_construcation.md) to create unpaired Event-RGB datasets. 
-<table>
-  <tr>
-    <th style="text-align:center;">Download Links Google Drive</th>
-    <th style="text-align:center;"><a href="https://drive.google.com/drive/folders/12PprdOSXhIrlp-xPKeboaVf7G8SPuyJB?usp=drive_link">PKU-DAVIS-SOD</a></td>
-    <th style="text-align:center;"><a href="https://drive.google.com/drive/folders/1sqaqS2TWkx8tSdVj4WFJD1uugUaKSX9j?usp=drive_link">DSEC-Detection</a></td>
-  </tr>
-</table>
 
 <table>
   <tr>
@@ -72,7 +65,7 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
   <tr>
     <td style="text-align:center;">OneDrive Link</td>
     <td style="text-align:center;">
-      <a href="https://onedrive.live.com/?cid=1234567890abcdef&authkey=%21ABCDEFGHIJKL&folderid=1234567890abcdef">PKU-DAVIS-SOD</a>
+      <a href="https://drive.google.com/drive/folders/12PprdOSXhIrlp-xPKeboaVf7G8SPuyJB?usp=drive_link">PKU-DAVIS-SOD</a>
     </td>
     <td style="text-align:center;">
       <a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/EZOFBpVaLLpNhGdcjH7gYu4Bl4uK1gXQDBy4L1oGrNmsFw">DSEC-Detection</a>
