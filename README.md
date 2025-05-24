@@ -72,19 +72,9 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
     </td>
   </tr>
 </table>
+
 ## Checkpoints
-<table>
-  <tr>
-    <th style="text-align:center;">PKU-DAVIS-SOD (Time Shift)</th>
-    <th style="text-align:center;">PKU-DAVIS-SOD</th>
-    <th style="text-align:center;">DSEC-Detection</th>
-  </tr>
-  <tr>
-    <td style="text-align:center;"><a href="https://drive.google.com/file/d/15Xk8fQ0h3zulg0CBtSncB-PIRr6e4e_4/view?usp=drive_link">mAP = 29.7</a></td>
-    <td style="text-align:center;"><a href="https://drive.google.com/file/d/1lTzr0X7eXKzeS0wVU8tzg6JYj2cMJCEr/view?usp=drive_link">mAP = 30.5</a></td>
-    <td style="text-align:center;"><a href="https://drive.google.com/file/d/15HqCsKFnRvv1D1dzEmvipLpcCCjtKNEe/view?usp=drive_link">mAP = 42.5</a></td>
-  </tr>
-</table>
+
 
 <table>
   <tr>
