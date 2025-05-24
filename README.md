@@ -61,11 +61,6 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
 
 <table>
   <tr>
-    <th style="text-align:center;">Download Links</th>
-    <th style="text-align:center;">PKU-DAVIS-SOD</th>
-    <th style="text-align:center;">DSEC-Detection</th>
-  </tr>
-  <tr>
     <td style="text-align:center;">Google Drive Link</td>
     <td style="text-align:center;">
       <a href="https://drive.google.com/drive/folders/12PprdOSXhIrlp-xPKeboaVf7G8SPuyJB?usp=drive_link">PKU-DAVIS-SOD</a>
@@ -80,7 +75,7 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
       <a href="https://onedrive.live.com/?cid=1234567890abcdef&authkey=%21ABCDEFGHIJKL&folderid=1234567890abcdef">PKU-DAVIS-SOD</a>
     </td>
     <td style="text-align:center;">
-      <a href="https://onedrive.live.com/?cid=1234567890abcdef&authkey=%21ABCDEFGHIJKL&folderid=1234567890abcdef">DSEC-Detection</a>
+      <a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/EZOFBpVaLLpNhGdcjH7gYu4Bl4uK1gXQDBy4L1oGrNmsFw">DSEC-Detection</a>
     </td>
   </tr>
 </table>
