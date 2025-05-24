@@ -61,23 +61,26 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
 
 <table>
   <tr>
-    <th style="text-align:center;">Download Links Google Drive</th>
-    <th style="text-align:center;">Download Links in OneDrive</th>
+    <th style="text-align:center;">Download Links</th>
     <th style="text-align:center;">PKU-DAVIS-SOD</th>
     <th style="text-align:center;">DSEC-Detection</th>
   </tr>
   <tr>
-    <td style="text-align:center;">
-      <a href="https://drive.google.com/drive/folders/12PprdOSXhIrlp-xPKeboaVf7G8SPuyJB?usp=drive_link">Google Drive Link</a>
-    </td>
-    <td style="text-align:center;">
-      <a href="https://onedrive.live.com/?cid=1234567890abcdef&authkey=%21ABCDEFGHIJKL&folderid=1234567890abcdef">OneDrive Link</a>
-    </td>
+    <td style="text-align:center;">Google Drive Link</td>
     <td style="text-align:center;">
       <a href="https://drive.google.com/drive/folders/12PprdOSXhIrlp-xPKeboaVf7G8SPuyJB?usp=drive_link">PKU-DAVIS-SOD</a>
     </td>
     <td style="text-align:center;">
       <a href="https://drive.google.com/drive/folders/1sqaqS2TWkx8tSdVj4WFJD1uugUaKSX9j?usp=drive_link">DSEC-Detection</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">OneDrive Link</td>
+    <td style="text-align:center;">
+      <a href="https://onedrive.live.com/?cid=1234567890abcdef&authkey=%21ABCDEFGHIJKL&folderid=1234567890abcdef">PKU-DAVIS-SOD</a>
+    </td>
+    <td style="text-align:center;">
+      <a href="https://onedrive.live.com/?cid=1234567890abcdef&authkey=%21ABCDEFGHIJKL&folderid=1234567890abcdef">DSEC-Detection</a>
     </td>
   </tr>
 </table>
