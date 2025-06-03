@@ -21,6 +21,9 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
 ## Videos
 
 ### Davis200
+
+<details>
+   
 <p align="center">
   <img src="readme/videos/dataset1.gif" width="750">
 </p>
@@ -29,6 +32,7 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
   <img src="readme/videos/dataset2.gif" width="750">
 </p>
 
+<\details>
 
 ### Under Event-RGB Mismatch
 <p align="center">
