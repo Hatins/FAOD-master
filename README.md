@@ -20,6 +20,16 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
 
 ## Videos
 
+### DHSSL
+<p align="center">
+  <img src="readme/videos/dataset1.gif" width="750">
+</p>
+
+<p align="center">
+  <img src="readme/videos/dataset2.gif" width="750">
+</p>
+
+
 ### Under Event-RGB Mismatch
 <p align="center">
   <img src="readme/videos/FAOD_unpaired_2.gif" width="750">
