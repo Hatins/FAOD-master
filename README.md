@@ -54,6 +54,10 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
 </details>
 
 ## Installation
+
+<details>
+<summary>(a) Environment</summary>
+   
 We recommend using cuda11.8 to avoid unnecessary environmental problems.
 ```
 conda create -y -n faod python=3.11
@@ -68,7 +72,12 @@ pip install openmim
 
 mim install mmcv
 ```
-## Required Data
+
+</details>
+
+<details>
+<summary>(b) Required Data</summary>
+   
 We provide datasets with the similar format of [RVT](https://github.com/uzh-rpg/RVT) for easy implements. 
 
 Noth that the following datasets are paired Event-RGB. Trying to evaluate ``Event-RGB Mismatch`` and ``Train-Infer Mismatch``?
@@ -95,8 +104,11 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
   </tr>
 </table>
 
-## Checkpoints
+</details>
 
+
+<details>
+<summary>(c) Checkpoints</summary>
 
 <table>
   <tr>
@@ -120,7 +132,13 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
   </tr>
 </table>
 
-## Validation with pre-trained models
+</details>
+
+## Validation and Training
+
+<details>
+<summary>(a) Validation with pre-trained models</summary>
+   
 Define the ``DATASET ['pku_fusion', 'dsec']``, ``DATA_PATH``, ``CHECKPOINT``, ``use_test_set [True, False]``, and then run the following command:
 ```python
 python validation.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT} use_test_set={use_test_set} +experiment/{DATASET}='base.yaml'
@@ -128,7 +146,11 @@ python validation.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHEC
 Other settings like ``use_test_set``, ``training.precision``, ``batch_size.eval``, ``hardware.num_workers`` can be set in file ``config/val.yaml`` 
 and ``config/experiment/{DATASET}/default.yaml`` conveniently.
 
-## Train FAOD with scratch
+</details>
+
+<details>
+<summary>(b) Train FAOD with scratch</summary>
+   
 Define the ``DATASET``, ``DATA_PATH``, and then run the following command:
 ```python
 python train.py dataset={DATASET} dataset.path={DATA_PATH} +experiment/{DATASET}='base.yaml'
@@ -137,7 +159,11 @@ Other settings like ``training.precision``, ``batch_size.train``, ``hardware.num
 and ``config/experiment/{DATASET}/default.yaml`` conveniently.
 Training FAOD with/without Time Shift? Following this instruction.
 
-## Visualization
+</details>
+
+<details>
+<summary>(c) Visualization</summary>
+
 The relevant content is in ``demo.py``.
 
 You need to set ``mode = ['pre', 'gt']``, and  ``show_mode = ['event','rgb','mixed']``.
@@ -152,4 +178,4 @@ python demo.py dataset={DATASET} dataset.path={DATA_PATH} checkpoint={CHECKPOINT
 
 The results will be saved in ``./gt`` or ``./predictions``. You can also ajust the destination path by yourself.
 
-
+</details>
