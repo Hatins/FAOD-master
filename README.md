@@ -32,7 +32,7 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
   <img src="readme/videos/dataset2.gif" width="750">
 </p>
 
-<\details>
+</details>
 
 ### Under Event-RGB Mismatch
 <p align="center">
