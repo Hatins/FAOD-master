@@ -35,16 +35,23 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
 
 </details>
 
-### Under Event-RGB Mismatch
+<details>
+<summary>(b) Under Event-RGB Mismatch</summary>
+   
 <p align="center">
   <img src="readme/videos/FAOD_unpaired_2.gif" width="750">
 </p>
 
+</details>
 
-### Under Train-Infer Mismatch
+<details>
+<summary>(c) Under Train-Infer Mismatch</summary>
+   
 <p align="center">
   <img src="readme/videos/faod_freq_2.gif" width="750">
 </p>
+
+</details>
 
 ## Installation
 We recommend using cuda11.8 to avoid unnecessary environmental problems.
