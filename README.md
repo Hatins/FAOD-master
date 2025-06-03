@@ -20,7 +20,7 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
 
 ## Videos
 
-### DHSSL
+### Davis200
 <p align="center">
   <img src="readme/videos/dataset1.gif" width="750">
 </p>
