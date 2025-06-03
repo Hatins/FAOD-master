@@ -20,9 +20,10 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
 
 ## Videos
 
-### Davis200
+
 
 <details>
+<summary>(a) Davis200</summary>
    
 <p align="center">
   <img src="readme/videos/dataset1.gif" width="750">
