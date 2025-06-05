@@ -92,6 +92,9 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
     <td style="text-align:center;">
       <a href="https://drive.google.com/drive/folders/1sqaqS2TWkx8tSdVj4WFJD1uugUaKSX9j?usp=drive_link">DSEC-Detection</a>
     </td>
+    <td style="text-align:center;">
+      <a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/ESdDA9LRvudHpXoTJx_UbLwBPk3YM5ZS9FH77ViDVtY-dg?e=HJ0oRk">EOD200</a>
+    </td>
   </tr>
   <tr>
     <td style="text-align:center;">OneDrive Link</td>
@@ -101,13 +104,7 @@ Following these [instructions](https://github.com/Hatins/FAOD-master/blob/main/r
     <td style="text-align:center;">
       <a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/EZOFBpVaLLpNhGdcjH7gYu4Bl4uK1gXQDBy4L1oGrNmsFw">DSEC-Detection</a>
     </td>
-  </tr>
-     <tr>
-    <td style="text-align:center;">OneDrive Link</td>
-    <td style="text-align:center;">
-      <a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/ESdDA9LRvudHpXoTJx_UbLwBPk3YM5ZS9FH77ViDVtY-dg?e=HJ0oRk">EOD200</a>
-    </td>
-    <td style="text-align:center;">
+   <td style="text-align:center;">
       <a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/ESdDA9LRvudHpXoTJx_UbLwBPk3YM5ZS9FH77ViDVtY-dg?e=HJ0oRk">EOD200</a>
     </td>
   </tr>
