@@ -23,7 +23,7 @@ Official code repository for Frequency-Adaptive Low-Latency Object Detection Usi
 
 
 <details>
-<summary>(a) Davis200</summary>
+<summary>(a) EOD200</summary>
    
 <p align="center">
   <img src="readme/videos/dataset1.gif" width="750">
