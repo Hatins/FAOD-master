@@ -5,8 +5,8 @@
 <table>
   <tr>
     <th style="text-align:center;">Download Links</th>
-    <th style="text-align:center;"><a href="https://drive.google.com/file/d/1AZN0kirkPGDUfhpQDqMBTcP5DdHSgvR5/view?usp=drive_link">PKU-DAVIS-SOD</a></td>
-    <th style="text-align:center;"><a href="https://drive.google.com/file/d/1-39iQVpt7KDW_MzoPvQO4pnPls0xspUI/view?usp=sharing">DSEC-Detection</a></td>
+    <th style="text-align:center;"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/IQDTjDVcu0zQSI9HNjywl6JmAYVHuAYRxHd9WgbwR5iVsEs?e=ygYCg3">PKU-DAVIS-SOD</a></td>
+    <th style="text-align:center;"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/haitian003_e_ntu_edu_sg/IQDe2pAwCEC6TaC7-IaWZIPtARC_kIoeJOap7q67AMhtScM?e=WppzEu">DSEC-Detection</a></td>
   </tr>
 </table>
 
