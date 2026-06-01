@@ -10,6 +10,7 @@
   </tr>
 </table>
 
+Note it's a tar file but not the zip, using the command tar to extract the file.
 ## Generate datasets for PKU-DAVIS-SOD
 
 We provide the scipt for generating PKU-DAVIS-SOD dataset in arbitary frequency combination.
